@@ -9,7 +9,7 @@ function loadTasks() {
   console.log("show clicked");
 
   gridElement.innerHTML = "<p class='loader'></p>";
-  fetch("http://127.0.0.1:8000/tasks")
+  fetch("https://fullstack-todo-app-itpx.onrender.com/tasks")
     .then(function (res) {
       console.log("fetch response received");
       return res.json();
@@ -24,7 +24,7 @@ function loadTasks() {
 function createTask() {
   console.log("create clicked");
   console.log(nameElement.value, dateElement.value);
-  fetch("http://127.0.0.1:8000/tasks", {
+  fetch("https://fullstack-todo-app-itpx.onrender.com/tasks", {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -52,7 +52,7 @@ function createTask() {
 // DELETE TASK
 function deleteTask(id) {
   console.log("delete clicked");
-  fetch("http://127.0.0.1:8000/tasks/" + id, {
+  fetch("https://fullstack-todo-app-itpx.onrender.com/tasks/" + id, {
     method: "DELETE",
   })
     .then(function (res) {

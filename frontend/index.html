@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="app-header">
+            <h1 class="header-title">To-Do List</h1>
+            <p class="subtitle">Stay organized. Stay sharp.</p>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+
+            <!-- INPUT CARD -->
+            <section class="card input-card">
+
+                <div class="form-group">
+                    <label for="task-name">Name</label>
+                    <input id="task-name" type="text" class="js-name-input" placeholder="Task name">
+                </div>
+
+                <div class="form-group">
+                    <label for="task-date">Due Date</label>
+                    <input id="task-date" type="date" class="js-date-input">
+                </div>
+
+                <div class="form-actions">
+                    <button class="create-btn" onclick="createTask()">Create</button>
+                    <button class="show-btn" onclick="loadTasks()">Show</button>
+                </div>
+
+            </section>
+
+            <!-- TASK LIST -->
+            <section class="card list-card">
+
+                <!-- HEADER -->
+                <div class="task-header">
+                    <div>Task</div>
+                    <div>Date</div>
+                    <div>Actions</div>
+                </div>
+
+                <!-- TASKS -->
+                <div class="list-grid"></div>
+
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="app-footer">
+            <p>Built by Rohit © 2026</p>
+        </footer>
+
+    </div>
+
+    <script src="js/app.js" defer></script>
+
+</body>
+
+</html>

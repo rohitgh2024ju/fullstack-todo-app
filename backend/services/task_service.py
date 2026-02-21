@@ -1,4 +1,4 @@
-import backend.repositories.task_repo as repo
+import repositories.task_repo as repo
 
 def create_task(name: str, date: str, is_critical: bool):
     if not name.strip():

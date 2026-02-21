@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from datetime import date
 
-from backend.services.task_service import create_task, remove_task, get_tasks
+from services.task_service import create_task, remove_task, get_tasks
 
 router = APIRouter()
 
